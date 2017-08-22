@@ -1,0 +1,127 @@
+Module - A re-useable block of code whose existence doles not accidentally impact other code.
+
+Common JS Modules - An agreed upon standard for how code modules should be structured
+
+First Class Function - Everything you can do with other types (i.e. strings, numbers, etc) you can do with functions
+
+An Expression - A block of code that results in a value
+
+Invoke - Run the function (also referred to as call)
+
+
+// var a = 1
+// var b = 2
+// var c = a+b
+// console.log(c);
+
+
+
+// function statement
+function greeting(){
+  console.log('hi')
+}
+greeting()
+
+// functions are first-class
+function logGreeting(fn){
+  fn()
+}
+logGreeting(greeting)
+
+// function expression
+// e.g 'hello', 3
+var greetMe = function(){
+  console.log('Hello Adrian');
+}
+greetMe();
+
+// it's first-class
+logGreeting(greetMe)
+
+// use a function on the fly
+logGreeting(function(){
+  console.log('Yo Adrian');
+})
+
+
+Name/Value pair - A name which maps to a value
+Object - A collection of name value pairs
+Object Literal - a name value pair seperated by commas and surrounded in curly braces
+e.g
+var person = {
+  firstname: 'Adrian',
+  lastname: 'Pearman',
+  greet: function(){
+    console.log('Hello, '+this.firstname + ' ' + this.lastname);
+  }
+}
+
+// Invoking the object in two different ways. either dot notation or invoking inside the console.log
+person.greet()
+console.log(person['firstname']);
+
+Inheritance - when one object gets access to the properties and methods of another method
+
+function constructor - a normal function that is used to construct objects
+function Person(firstname, lastname){
+  this.firstname = firstname
+  this.lastname = lastname
+}
+
+Person.prototype.greet = function(){
+  console.log('hello, '+this.firstname);
+}
+
+var adrian = new Person('adrian', 'pearman')
+adrian.greet()
+// console.log(adrian.firstname);
+
+
+var mackenzie = new Person('mackenzie', 'pearman')
+mackenzie.greet()
+
+
+console.log(adrian.__proto__);
+console.log(mackenzie.__proto__);
+
+// compares the two objects. it will return the two as true instead of false as both objects are same even though the they have different values
+console.log(adrian.__proto__ === mackenzie.__proto__);
+
+
+Primitive - a type of data that represents a single value
+e.g//  pass by value
+function change(b){
+  b = 2
+}
+
+var a = 1
+change(a)
+console.log(a);
+
+
+// pass by references
+function changeObj(d){
+  d.prop1 = function(){}
+  d.prop2 = {}
+}
+
+var c = {}
+c.prop1 = {}
+changeObj(c)
+console.log(c);
+
+IIFE - Immediately Invoke Function Expression
+(function (){
+ // code goes here
+}())
+
+Scope - Where in code you have access to a variable or function
+// Due to the scope chain, the iife will not have any effect on the firstname variable outside of the firstname function called in the iife
+var firstname = 'Jane';
+
+(function(){
+  var firstname = 'Adrian'
+  console.log(firstname);
+}());
+
+console.log(firstname);
