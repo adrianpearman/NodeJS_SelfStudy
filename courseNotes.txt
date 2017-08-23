@@ -125,3 +125,11 @@ var firstname = 'Jane';
 }());
 
 console.log(firstname);
+
+
+Require - a function that you pass a path to
+module.exports - is what the require function returns
+this works because your code is actually wrapped in a function that is given there things as function parameters
+
+
+json (javascript object notation)- a standard for structuring data that is inspired by javascript object literals
