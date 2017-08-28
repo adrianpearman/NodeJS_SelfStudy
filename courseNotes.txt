@@ -158,3 +158,7 @@ Event - Something that has happened in out app that we can respond to.
 Event listener - the code that responds to an events
 
 Magic String - A string that has some special meaning in our code
+
+Template Literal - A way to concatenate strings in Javascript(ES6s)
+
+Syntactic Sugar - a feature that only changes how you type something, but nothing under the hood changes.

@@ -2,6 +2,7 @@ var EventEmitter = require('events');
 var util = require('util');
 
 function Greetr(){
+  EventEmitter.call(this);
   this.greeting = "Hello World!"
 }
 
@@ -19,3 +20,5 @@ greeter1.on('greet', function(data){
 })
 
 greeter1.greet('Tony')
+
+// the screen shot displays this in block form for better understanding
