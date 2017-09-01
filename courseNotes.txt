@@ -162,3 +162,47 @@ Magic String - A string that has some special meaning in our code
 Template Literal - A way to concatenate strings in Javascript(ES6s)
 
 Syntactic Sugar - a feature that only changes how you type something, but nothing under the hood changes.
+
+Asynchronous - more than one process running simultaneously
+
+Synchronous - one process at a time
+
+Node.JS is asynchronous, V8 and Javascript is synchronous
+
+Callback - a function that we pass to another function, and we assume that it will be invoked at some point
+
+Non Blocking - doing other things without stopping your program from running
+
+Buffer - a temporary holding spot for data being moved from one place to another
+
+Stream - a sequence of data made available over time
+
+Binary Data - data that is stored in binary (0's and 1's). The computer reads the binary digits from right to left over base 2.
+
+Character Set - a representation of characters as numbers
+
+Character Encoding - how characters are stored in binary
+
+Bit = 8 Bytes
+
+Error-First Callback - Callback that takes an error object as its first parameter (null if no error, otherwise will contain an object)
+
+Chunk - a piece data being sent through a stream
+
+Abstract class - a type pf constructor that you never work directly with, but inherit from.
+
+Pipe - Connecting two streams by writing to one stream what is being read from another
+
+Method Chaining - a method returns an object so we can keep calling methods
+
+Protocol - a set of rules two sides agree on when communicating
+
+TCP - Transmission Control Protocol
+
+IP - Internet Protocol
+
+Port - Once a computer receives a packet, how it knows what program to send it to.
+
+HTTP (HyperText Transfer Protocol) - a set of rules (and a format) for data being transferred on the web
+
+MIME Type (Multipurpose Internet Mail Extensions) - a standard for specifying the type of data being sent
