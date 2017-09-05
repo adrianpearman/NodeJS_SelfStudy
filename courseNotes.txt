@@ -233,4 +233,12 @@ to save an npm module globally, use 'npm install -g #npmmodule'
 
 to update the dependancies within a npm module use 'npm update'
 
-environment variables - global variables specific to the environment(server) our code is living in 
+environment variables - global variables specific to the environment(server) our code is living in
+
+HTTP Method - specifies the type of action the request wishes to make. GET, POST, PUT, DELETE, ETC..
+
+Middleware - code that sits between two layers of software
+
+Static - not dynamic. in other words, not processed by code in anyway i.e standard HTML, CSS or image documents
+
+REST(Representational State Transfer) - an architectural style for building APIs.
