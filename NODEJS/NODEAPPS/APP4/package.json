@@ -1,0 +1,14 @@
+{
+  "name": "nodejs-test-app",
+  "version": "1.0.0",
+  "description": "NODEJS App",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\""
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.15.4"
+  }
+}

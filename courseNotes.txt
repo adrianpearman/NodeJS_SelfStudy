@@ -175,7 +175,7 @@ Non Blocking - doing other things without stopping your program from running
 
 Buffer - a temporary holding spot for data being moved from one place to another
 
-Stream - a sequence of data made available over time
+Stream - a sequence of data made available over time (use streams where ever you can, and if not make sure that it is on purpose)
 
 Binary Data - data that is stored in binary (0's and 1's). The computer reads the binary digits from right to left over base 2.
 
@@ -206,3 +206,31 @@ Port - Once a computer receives a packet, how it knows what program to send it t
 HTTP (HyperText Transfer Protocol) - a set of rules (and a format) for data being transferred on the web
 
 MIME Type (Multipurpose Internet Mail Extensions) - a standard for specifying the type of data being sent
+
+Template - text designed to be the basis for final text or content after being processed
+
+API (Application Programming Interface)- a set of tools for building a software application
+
+Endpoint - one url in a web api
+
+Serialized - translating an object into a format that can be store or transferred (Deserialized is the opposite; converting back into an object. Common formats for this is JSON, XMLand CSV)
+
+Routing - mapping http request to content
+
+Package - code thats managed and maintained with a package management system
+
+Package Management System - software that automates installing and updating packages
+
+Dependency - code that another set of code depends on to function
+
+Versoning - specifying what version of a set of that it is. (Semantic versoning dictates what version it is. for example Code 1.8.0. The numbers are described as major.minor.patch. patch is for small bugs; minor is usually new features but is backwards compatible. major is for big changes. previous code may break) checkout semver.org
+
+installing npm files within the application use 'npm install #npmmodule --save'
+
+to save as a devDependancy so that it isn't sent into production us 'npm install #npmmodule --save-dev'
+
+to save an npm module globally, use 'npm install -g #npmmodule'
+
+to update the dependancies within a npm module use 'npm update'
+
+environment variables - global variables specific to the environment(server) our code is living in 
