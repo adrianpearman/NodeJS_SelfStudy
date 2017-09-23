@@ -242,3 +242,23 @@ Middleware - code that sits between two layers of software
 Static - not dynamic. in other words, not processed by code in anyway i.e standard HTML, CSS or image documents
 
 REST(Representational State Transfer) - an architectural style for building APIs.
+
+noSQL - a variety of technologies that are alternatives to tables and sql. an example is a document database
+
+Stack - the combination of all technology used to build a piece of software. Database + Client Side + Server side technologies
+
+The 'MEAN' Stack -
+  MongoDB(stores the data in documents that look a lot like JSON and Javascript object literal notation),
+  ExpressJS(Javascript framework that makes things like routing writing APIs, and working with HTTP easier),
+  Angular(Javascript framework  for managing code  and UI in the browser, removing a lot of manual work) and
+  NodeJS(Javascript on the server. Handle HTTP requests and responses and lots more.)
+
+  Typically Browsers are written in C++ : Browsers also have a JS engine embedded in them and give them access to extra features (Google Chrome is built with V8 Engine)
+
+  DOM (Document Object Model)- the structure browsers use to store and manage web pages.
+
+Full Stack Developer - A developer who knows all the pieces of a software stack.
+
+Seed - adding initial data to a database
+
+Transpile - convert one programming language into another (i.e Typescript is a transpiled version of Javascript)
